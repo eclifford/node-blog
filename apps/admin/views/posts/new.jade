@@ -1,0 +1,8 @@
+extends ../layout
+
+block content
+  div.hero-unit
+    ht #{title}
+
+  form.well(action='/admin/posts/new', method='POST')
+    include _form

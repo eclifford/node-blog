@@ -1,0 +1,11 @@
+label(for='post_title') Title
+input(type='text', name='post[title]', value=post.title)
+
+label(for='post_preview') Preview
+textarea(name='post[preview]', value=post.body)
+
+label(for='post_body') Body
+textarea(name='post[body]')
+  | #{post.body}
+
+input.btn(type='submit')

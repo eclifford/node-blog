@@ -1,0 +1,10 @@
+extends layout
+
+block content
+  each post in posts
+    section
+      h3 
+        | #{post.title}
+      p
+        | #{post.author}
+      body!= hl(md(post.body), true, true)
